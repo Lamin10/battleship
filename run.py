@@ -24,10 +24,11 @@ def create_ships(board):
         while board[ship_row][ship_column] == "X":
             ship_row, ship_column = randint(0, 7), randint(0, 7)
         board[ship_row][ship_column] = "X"
+        
 
 def get_ship_location():
     while True:
-        row = input("Enter the row of the ship from 1 to 8: ")
+        row = int(input("Enter the row of the ship from 1 to 8: "))
         if row in "12345678":
             break
         print('Not an appropriate choice, please select a valid row')
@@ -43,15 +44,18 @@ def get_ship_location():
 def count_hit_ships(board):
     return sum(row.count("X") for row in board)
 
-if __name__ == "__main__":
+
+# function to play the game
+def play_game():
     create_ships(HIDDEN_BOARD)
-    turns = 5
+    turns = 10
     hits = 0
     misses = 0
     while turns > 0:
         print("Welcome To Battleship Game!!")
         print('Guess a Battleship Location') 
         print_board(GUESS_BOARD)
+        print_board(HIDDEN_BOARD)
         row, column = get_ship_location()
         if GUESS_BOARD[row][column] == "-":
             print("You guessed that one already.")
@@ -73,3 +77,18 @@ if __name__ == "__main__":
             print("You ran out of turns")
             print(f"Number of Hits: {hits}")
             print(f"Number of Misses: {misses}")
+
+
+# Function to replay the game after it ends
+def main():
+    while True:
+        play_game()
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again != "yes":
+            print("Thanks for playing. Goodbye!")
+            break
+
+
+if __name__ == "__main__":
+    main()
+
