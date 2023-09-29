@@ -28,15 +28,24 @@ def create_ships(board):
 
 def get_ship_location():
     while True:
-        row = int(input("Enter the row of the ship from 1 to 8: "))
-        if row in "12345678":
-            break
-        print('Not an appropriate choice, please select a valid row')
+        try:
+            row = int(input("Enter the row of the ship from 1 to 8: "))
+            if row in range(1, 9):
+                break
+            else:
+                print('Not an appropriate choice, please select a valid row')
+        except ValueError:
+            print('Not an appropriate choice, please select a valid row')
+
     while True:
-        column = input("Enter the column of the ship from A to H: ").upper()
-        if column in "ABCDEFGH":
-            break
-        print('Not an appropriate choice, please select a valid column')
+        try:
+            column = input("Enter the column of the ship from A to H: ").upper()
+            if column in "ABCDEFGH":
+                break
+            else:
+                print('Not an appropriate choice, please select a valid column')
+        except ValueError:
+            print('Not an appropriate choice, please select a valid column')
     return int(row) - 1, letters_to_numbers[column]
 
 
@@ -55,7 +64,6 @@ def play_game():
         print("Welcome To Battleship Game!!")
         print('Guess a Battleship Location') 
         print_board(GUESS_BOARD)
-        print_board(HIDDEN_BOARD)
         row, column = get_ship_location()
         if GUESS_BOARD[row][column] == "-":
             print("You guessed that one already.")
