@@ -31,7 +31,7 @@ def get_ship_location():
     while True:
         try:
             row = int(input("Enter the row of the ship from 1 to 8:\n "))
-            if row in "12345678":
+            if row in range(1, 9):
                 break
             else:
                 print("Not an appropriate choice, please select a valid row")
