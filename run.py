@@ -30,7 +30,7 @@ def create_ships(board):
 def get_ship_location():
     while True:
         try:
-            row = input("Enter the row of the ship from 1 to 8:")
+            row = int(input("Enter the row of the ship from 1 to 8:\n "))
             if row in "12345678":
                 break
             else:
@@ -40,7 +40,7 @@ def get_ship_location():
 
     while True:
         try:
-            column = input("Enter a column of the ship from A to H:").upper()
+            column = input("Enter column of the ship from A to H:\n ").upper()
             if column in "ABCDEFGH":
                 break
             else:
@@ -92,7 +92,7 @@ def play_game():
 def main():
     while True:
         play_game()
-        play_again = input("Do you want to play again? (yes/no): ").lower()
+        play_again = input("Do you want to play again? (yes/no):\n ").lower()
         if play_again != "yes":
             print("Thanks for playing. Goodbye!")
             break
