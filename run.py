@@ -26,7 +26,7 @@ def create_ships(board):
             board[ship_row][ship_column] = "X"
             placed_ships += 1
 
-            
+
 # function to get user guesses
 def get_ship_location():
     while True:
