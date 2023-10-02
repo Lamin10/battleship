@@ -17,13 +17,14 @@ def print_board(board):
 letters_to_numbers = {chr(ord('A') + i): i for i in range(8)}
 
 
-# Computer creates 5 ships
+# Computer creates 5 ships without overlapping
 def create_ships(board):
-    for _ in range(5):
+    placed_ships = 0
+    while placed_ships < 5:
         ship_row, ship_column = randint(0, 7), randint(0, 7)
-        while board[ship_row][ship_column] == "X":
-            ship_row, ship_column = randint(0, 7), randint(0, 7)
+        if board[ship_row][ship_column] != "X":
             board[ship_row][ship_column] = "X"
+            placed_ships += 1
 
             
 # function to get user guesses
@@ -61,23 +62,23 @@ def play_game():
     turns = 10
     hits = 0
     misses = 0
+    # Print the welcome message at the beginning of the game.
+    print("Welcome To Battleship Game!!")
+    print("Guess a Battleship Location")
     while turns > 0:
-        print("Welcome To Battleship Game!!")
-        print("Guess a Battleship Location") 
         print_board(GUESS_BOARD)
         row, column = get_ship_location()
+        turns -= 1
         if GUESS_BOARD[row][column] == "-":
             print("You guessed that one already.")
         elif HIDDEN_BOARD[row][column] == "X":
             print("Hit")
             GUESS_BOARD[row][column] = "X"
             hits += 1
-            turns -= 1
         else:
             print("MISS!")
             GUESS_BOARD[row][column] = "-"
             misses += 1
-            turns -= 1
         if count_hit_ships(GUESS_BOARD) == 5:
             print("You win!")
             break
