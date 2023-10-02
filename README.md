@@ -29,7 +29,7 @@
   + If you run out of turns before sinking all ships, the game will display the final board, including your hits and misses.
    
 ## Functions and Features
-    This Battleship game is built with the following functions and features:
+
 
    ### print_board(board): 
    + The print_board function is responsible for displaying the game board, including ship locations and hits/misses.
@@ -74,4 +74,4 @@
 + HEROKU: Couldnt also deploy on Heroku due to registration issues which have to do with my bank card
 ## Credits
 + The battleship game was build with VisualCode Studio and then transfered to Codeanywhere with the Codeinstitute python deployment template
-+ 
++  This Battleship game is built with the following functions and features:
