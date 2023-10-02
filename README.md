@@ -30,6 +30,8 @@
    
 ## Functions and Features
 
++ This Battleship game is built with the following functions and features:
+
 
    ### print_board(board): 
    + The print_board function is responsible for displaying the game board, including ship locations and hits/misses.
@@ -55,7 +57,6 @@
 + The same when you hit a ship which prints an "x" on that spot
 ## Bugs Detected
 + Indentations issues was detected
-+ 
 
 ## Validator Testing
 + Testing of the python battleship game code was done on Pep8online.com website and indentation issues was found and it was troubleshoot
@@ -63,15 +64,16 @@
   
 ## Deployment
 + Unfortunately the battleship game was not been able to be deployed
-+ RENDER: Deployment was tryied to be done on Render but it was not successful it always encounter an EOFError.
++ **RENDER**: Deployment was tryied to be done on Render but it was not successful it always encounter an EOFError.
 + The error typically occurs when the input() function is used to read input from the user, but the input stream ends unexpectedly.
 + This error is happening at line 33, where its trying to read the row of the ship
 + To troubleshoot this error i added a "/n" on all the input fields but was to no success
 + Testing Locally: the code was tested locally to see if it runs without errors and it did work without any error  and it was likely an issue with the Render environment.
-+ DIGITALOCEAN: Deployment was also tried on DigitalOcean but to no success it was asking for a package-lock.json file
++ **DIGITALOCEAN**: Deployment was also tried on DigitalOcean but to no success it was asking for a package-lock.json file
 + To troubleshoot this error i tried to install a package-lock.json file using the terminal with the command "npm install" but return command not found.
 + The package.json file was renamed to package-lock.json but still the deployment failed.
-+ HEROKU: Couldnt also deploy on Heroku due to registration issues which have to do with my bank card
++ **HEROKU**: Couldnt also deploy on Heroku due to registration issues which have to do with my bank card
 ## Credits
-+ The battleship game was build with VisualCode Studio and then transfered to Codeanywhere with the Codeinstitute python deployment template
-+  This Battleship game is built with the following functions and features:
++ The battleship game was build with [VisualCode Studio](https://code.visualstudio.com/) and then transfered to [Codeanywhere](https://id.codeanywhere.com) cloud IDE with the [Codeinstitute](https://learn.codeinstitute.net) python deployment template
++ And [GitHub Pages](https://pages.github.com/) for hosting this project.
+
