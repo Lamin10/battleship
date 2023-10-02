@@ -8,7 +8,8 @@
 + You have 10 turns to guess the coordinates to attack.
 + The game provides feedback on whether your attack was a "Hit" or "Miss."
 + The game ends when you successfully sink all five enemy ships or run out of turns.
-  
++ And it ask whether you would like to play again if yes the the game restart if no it ends with a gooddbye.
+    
   ## Table of Contents
   
 ## Game Overview
@@ -47,7 +48,30 @@
   
 ## Testing
 ### Manual
++ A manual testing was done on the user input which accept input in the range of 1 to 8 on the rows, a number out of that range was entered
++ and it gives a valueErrow with a message "Not an appropriate choice, please select a valid row".
++ The same was done on the column input which range from A to H and got the same valueError with the message "Not a correct choice, please select a valid column"
++ When a hit is made and it miss a dass "-" is printed on that spot when you select the same spot again you get and error message that "You guessed that one already"
++ The same when you hit a ship which prints an "x" on that spot
 ## Bugs Detected
++ Indentations issues was detected
++ 
+
 ## Validator Testing
++ Testing of the python battleship game code was done on Pep8online.com website and indentation issues was found and it was troubleshoot
++ The secon testing was done and no bugs where found.
+  
 ## Deployment
++ Unfortunately the battleship game was not been able to be deployed
++ RENDER: Deployment was tryied to be done on Render but it was not successful it always encounter an EOFError.
++ The error typically occurs when the input() function is used to read input from the user, but the input stream ends unexpectedly.
++ This error is happening at line 33, where its trying to read the row of the ship
++ To troubleshoot this error i added a "/n" on all the input fields but was to no success
++ Testing Locally: the code was tested locally to see if it runs without errors and it did work without any error  and it was likely an issue with the Render environment.
++ DIGITALOCEAN: Deployment was also tried on DigitalOcean but to no success it was asking for a package-lock.json file
++ To troubleshoot this error i tried to install a package-lock.json file using the terminal with the command "npm install" but return command not found.
++ The package.json file was renamed to package-lock.json but still the deployment failed.
++ HEROKU: Couldnt also deploy on Heroku due to registration issues which have to do with my bank card
 ## Credits
++ The battleship game was build with VisualCode Studio and then transfered to Codeanywhere with the Codeinstitute python deployment template
++ 
