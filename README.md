@@ -23,20 +23,20 @@
   + You have 10 turns to guess the locations of the computer's ships.
   + Enter the row (from 1 to 8) and column (from A to H) coordinates to target a square on the board.
     
-  ![battleship grid screenshot](views/images/run-py-battleship-Codeanywhere-1.png)
+    ![battleship grid screenshot](views/images/run-py-battleship-Codeanywhere-1.png)
 
   + You'll receive feedback on whether your guess was a "Hit" (you hit a ship) or a "Miss" (you missed).
 
-  ![battleship grid screenshot 2](views/images/run-py-battleship-Codeanywhere-2.png)
+    ![battleship grid screenshot 2](views/images/run-py-battleship-Codeanywhere-2.png)
   
   + You guessed that one already" if you target a square you've already attacked
 
-  + ![battleship grid screenshot 3](views/images/run-py-battleship-Codeanywhere-3.png)
+    ![battleship grid screenshot 3](views/images/run-py-battleship-Codeanywhere-3.png)
     
    **Winning the Game**:
   + The game ends when you successfully sink all five of the computer's battleships.
 
-   ![battleship grid screenshot 1](views/images/run-py-battleship-Codeanywhere-1.png)
+    ![battleship grid screenshot 1](views/images/run-py-battleship-Codeanywhere-1.png)
    
   + If you run out of turns before sinking all ships, the game will display the final board, including your hits and misses.
 
