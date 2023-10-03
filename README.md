@@ -22,6 +22,7 @@
   + Launching the Game: Run the game by executing the python3 run.py file.
   + You have 10 turns to guess the locations of the computer's ships.
   + Enter the row (from 1 to 8) and column (from A to H) coordinates to target a square on the board.
+  ![battleship grid screenshot](run-py-battleship-Codeanywhere-1.png)
   + You'll receive feedback on whether your guess was a "Hit" (you hit a ship) or a "Miss" (you missed).
   + You guessed that one already" if you target a square you've already attacked
   + Winning the Game:
