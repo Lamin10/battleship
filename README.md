@@ -22,12 +22,25 @@
   + Launching the Game: Run the game by executing the python3 run.py file.
   + You have 10 turns to guess the locations of the computer's ships.
   + Enter the row (from 1 to 8) and column (from A to H) coordinates to target a square on the board.
+    
   ![battleship grid screenshot](views/images/run-py-battleship-Codeanywhere-1.png)
+
   + You'll receive feedback on whether your guess was a "Hit" (you hit a ship) or a "Miss" (you missed).
+
+  ![battleship grid screenshot](views/images/run-py-battleship-Codeanywhere-2.png)
+  
   + You guessed that one already" if you target a square you've already attacked
+
+  + ![battleship grid screenshot](views/images/run-py-battleship-Codeanywhere-3.png)
+    
   + Winning the Game:
   + The game ends when you successfully sink all five of the computer's battleships.
+
+   ![battleship grid screenshot](views/images/run-py-battleship-Codeanywhere-1.png)
+   
   + If you run out of turns before sinking all ships, the game will display the final board, including your hits and misses.
+
+    ![battleship grid screenshot](views/images/run-py-battleship-Codeanywhere-5.png)
    
 ## Functions and Features
 
@@ -54,6 +67,9 @@
 + A manual testing was done on the user input which accept input in the range of 1 to 8 on the rows, a number out of that range was entered
 + and it gives a valueErrow with a message "Not an appropriate choice, please select a valid row".
 + The same was done on the column input which range from A to H and got the same valueError with the message "Not a correct choice, please select a valid column"
+
+  ![battleship grid screenshot](views/images/run-py-battleship-Codeanywhere-4.png)
+  
 + When a hit is made and it miss a dass "-" is printed on that spot when you select the same spot again you get and error message that "You guessed that one already"
 + The same when you hit a ship which prints an "x" on that spot
 ## Bugs Detected
