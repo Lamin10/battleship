@@ -9,8 +9,6 @@
 + The game provides feedback on whether your attack was a "Hit" or "Miss."
 + The game ends when you successfully sink all five enemy ships or run out of turns.
 + And it ask whether you would like to play again if yes the the game restart if no it ends with a gooddbye.
-    
-  ## Table of Contents
   
 ## Game Overview
   + Battleship is a two-player game where each player tries to sink the other player's ships. 
